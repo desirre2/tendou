@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Paimon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="menu">
+        <a href="index.html" class="link-menu">Home</a>
+        <a href="galeria.html" class="link-menu">galeria</a>
+        <a href="chat.html" class="link-menu" id="linkChat">Chat</a>
+        <a href="cadastro.html" class="link-menu">cadastro</a>
+        <a href="login.html" class="link-menu">login</a>
+    </nav>
+
+        <script>
+    const linkChat = document.querySelector('#linkChat');
+
+    linkChat.addEventListener('click', function(event) {
+        const usuarioLogado = localStorage.getItem('usuarioLogado');
+
+        if (!usuarioLogado) {
+            event.preventDefault();
+            window.location.href = 'cadastro.html';
+        }
+    });
+</script>
+
+    <header class="hero-deadpool">
+      <div class="esquerdo">
+        <h1 class="hero-titulo">TENDOU</h1>
+        <p class="hero-subtitulo">
+            Tendou sempre foi apaixonado por chocolate e decidiu seguir sua paixão, tornando-se um chocolatier.
+      </div>
+
+        <img src="imagens/tendou.png" alt="tendou" class="deadpool-front" />
+
+      <div class="direito">
+        <div class="bloco-balao">
+          <p>
+            Pronto para conversar com você!
+          </p>
+        </div>
+
+        <a href="chat.html" class="btn-principal">Conectar no Chat</a>
+      </div>
+    </header>
+
+    <main class="container-principal">
+      <section class="secao-perfil">
+        <div class="perfil-texto">
+          <h2>Quem é Tendou?</h2>
+          <p>
+            Mesmo que no ensino médio tenha sido jogador de vôlei, Tendou sempre foi apaixonado por chocolate e decidiu seguir sua paixão, tornando-se um chocolatier.Ele se formou em confeitaria e trabalhou em várias lojas de chocolate antes de abrir sua própria confeitaria. Ele é conhecido por suas criações inovadoras e deliciosas, que combinam sabores clássicos com técnicas modernas de confeitaria.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>&copy; Desenvolvido por Desirrê - 2026 Curitiba</footer>
+  </body>
+</html>

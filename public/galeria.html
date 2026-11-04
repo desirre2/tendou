@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personagens de Haikyuu </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="menu">
+        <a href="index.html" class="link-menu">Home</a>
+        <a href="galeria.html" class="link-menu">Galeria</a>
+        <a href="chat.html" class="link-menu" id="linkChat">Chat</a>
+        <a href="cadastro.html" class="link-menu">Cadastro</a>
+        <a href="login.html" class="link-menu">Login</a>
+    </nav>
+
+       <script>
+    const linkChat = document.querySelector('#linkChat');
+
+    linkChat.addEventListener('click', function(event) {
+        const usuarioLogado = localStorage.getItem('usuarioLogado');
+
+        if (!usuarioLogado) {
+            event.preventDefault();
+            window.location.href = 'cadastro.html';
+        }
+    });
+</script>
+
+    <div class="vitrine">
+
+        <article class="heroi">
+            <img src="imagens/akaashi.jpg" alt="akaashi" class="foto-heroi">
+            <h2 class="titulo">Akaashi</h2>
+            <p>Atual editor de mangá na famosa revista Weekly Shōnen Jump.</p>
+            <button class="botao">Ver mais sobre</button>
+        </article>
+
+        <article class="heroi">
+            <img src="imagens/bokuto.jpg" alt="Bokuto" class="foto-heroi">
+            <h2 class="titulo">Bokuto</h2>
+            <p>Atual jogador profissional de vôlei. Ele é o ace e capitão do MSBY Black Jackals</p>
+            <button class="botao">Ver mais sobre</button>
+        </article>
+
+        <article class="heroi">
+            <img src="imagens/iwaizumi.jpg" alt="Iwaizumi" class="foto-heroi">
+            <h2 class="titulo">Iwaizumi</h2>
+            <p>Atual treinador esportivo. Ele estudou ciências do esporte nos Estados Unidos. </p>
+            <button class="botao">Ver mais sobre</button>
+        </article>
+
+        <article class="heroi">
+            <img src="imagens/oikawa.jpg" alt="Oikawa" class="foto-heroi">
+            <h2 class="titulo">Oikawa</h2>
+            <p>Atual  jogador profissional de vôlei. </p>
+            <button class="botao">Ver mais sobre</button>
+        </article>
+
+         <article class="heroi">
+            <img src="imagens/tendou.jpg" alt="Tendou" class="foto-heroi">
+            <h2 class="titulo">Tendou</h2>
+            <p>Atual chocolatier na confeitaria LIONCEAU. Após se aposentar do vôlei profissional</p>
+            <button class="botao">Ver mais sobre</button>
+        </article>
+
+        <article class="heroi">
+            <img src="imagens/ushijima.jpg" alt="Ushijima" class="foto-heroi">
+            <h2 class="titulo">Ushijima</h2>
+            <p>Jogador profissional de vôlei. Atua como atacante, além de defender a Seleção Japonesa</p>
+            <button class="botao">Ver mais sobre</button>
+        </article>
+
+         <article class="heroi">
+            <img src="imagens/suna.jpg" alt="Suna" class="foto-heroi">
+            <h2 class="titulo">Suna</h2>
+            <p>Atual jogador profissional de vôlei. Ele atua como bloqueador de meio de rede.</p>
+            <button class="botao">Ver mais sobre</button>
+        </article>
+
+        <article class="heroi">
+            <img src="imagens/osamu.jpg" alt="Osamu" class="foto-heroi">
+            <h2 class="titulo">Osamu</h2>
+            <p>Atual fundador e proprietário de seu próprio restaurante de sucesso chamado Onigiri Miya</p>
+            <button class="botao">Ver mais sobre</button>
+        </article>
+
+         
+
+    </div>
+    
+</body>
+</html>
